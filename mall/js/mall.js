@@ -4,6 +4,15 @@ $(function(){
         $('.top_banner').hide();
     })
 
+    //顶部下拉菜单
+    $('.h_inner').find('.s_down').mouseover(function(){
+        $(this).css('background','#fff').children('a').css('color','#cb242b').children('i').removeClass('icon-shangxiajiantou').addClass('icon-shang').parent().siblings('.b').show();
+    })
+    $('.h_inner').find('.s_down').mouseout(function(){
+        $(this).css({background:'#2e2828',height:36}).children('a').css('color','#afafaf').children('i').removeClass('icon-shang').addClass('icon-shangxiajiantou').parent().siblings('.b').hide();
+    })
+
+
     //banner轮播图
     function Play(banner,ul){
         this.banner = $(banner);//总轮播图容器
@@ -89,5 +98,98 @@ $(function(){
     var p1 = new Play('#banner','.imgbox'); //轮播图#banner
 
     var p2 = new Play('.warp','.libox')//轮播图 .banner_slider
+
+
+    //公告轮播
+    var ann_ul = $('.announcement').find('ul');
+    // console.log(ann_ul);
+    ann_ul.index = 0;
+    ann_ul[0].timer = setInterval(function(){
+        ann_ul.index++;
+        if(ann_ul.index == ann_ul.children().length){
+            ann_ul.index = 1;
+            ann_ul.css('marginTop',0);
+        }
+        ann_ul.animate({
+            marginTop:-43 * ann_ul.index
+        })   
+    },2000)
+    ann_ul.mouseover(function(){
+        clearInterval(ann_ul[0].timer);
+        ann_ul[0].timer = null;
+    })
+    ann_ul.mouseout(function(){
+        ann_ul[0].timer = setInterval(function(){
+            ann_ul.index++;
+            if(ann_ul.index == ann_ul.children().length){
+                ann_ul.index = 1;
+                ann_ul.css('marginTop',0);
+            }
+            ann_ul.animate({
+                marginTop:-43 * ann_ul.index
+            })   
+        },2000)
+    })
+
+    // 底部微信二维码显示隐藏
+    $('.service_r').find('.img').parent().mouseover(function(){
+        $(this).children('.img').show();
+    })
+    $('.service_r').find('.img').parent().mouseout(function(){
+        $(this).children('.img').hide();
+    })
+
+    //点击触发的滑条
+    function Slider(box,callback){
+        this.box = $(box);//总容器
+        this.ul = this.box.children('ul');
+        this.lis = this.ul.children('li');
+        this.back = this.box.children('.back');
+        this.forword = this.box.children('.forword');
+        this.index = 0;
+        this.init();
+    }
+    Slider.prototype.init = function(){
+        this.next();
+        this.prev();
+    }
+    Slider.prototype.next = function(){
+        var that = this;
+        this.forword.click(function(){
+            that.index++;
+            that.ul.animate({
+                left:-that.index * 1210
+            })
+            that.light(that.index);
+        })
+    }
+    Slider.prototype.prev = function(){
+        var that = this;
+        this.back.click(function(){
+            that.index--;
+            that.ul.animate({
+                left:-that.index * that.box.width()
+            })
+            that.light(that.index);
+        })
+    }
+    Slider.prototype.light = function(num){
+        if(num == 0){
+            this.back.hide();
+            this.forword.show();
+        }
+        if(num == 1){
+            this.back.show();
+            this.forword.show();
+        }
+        if(num == 2){
+            this.back.show();
+            this.forword.hide();
+        }
+    }
+    var s1 = new Slider('.recommend');  //精品推荐滑条
+    var s2 = new Slider('.watch_banner');//智能穿戴滑条
+    var s3 = new Slider('.household_banner');//智能家居滑条
+    var s4 = new Slider('.accessories_banner');//热销配件滑条
 })
 

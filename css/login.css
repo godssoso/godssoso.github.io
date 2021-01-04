@@ -1,0 +1,161 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    height: 48px;
+    min-width: 1200px;
+    background: rgba(0,0,0,0.05);
+}
+.h_inner{
+    height: 48px;
+}
+.h_inner .logo{
+    float: left;
+    vertical-align: middle;
+    margin: 12px 0 0;
+}
+.h_inner .logo img{
+    height: 24px;
+    width: 108px;
+    margin-left: 4px;
+    margin-top: 0!important;
+}
+.h_inner .webname{
+    font-size: 20px;
+    line-height: 48px;
+    vertical-align: middle;
+    float: left;
+}
+.h_inner .webname .line{
+    width: 1px;
+    height: 20px;
+    float: left;
+    vertical-align: middle;
+    background: rgba(0,0,0,.2);
+    margin: 14px 16px;
+}
+.h_inner .webname b{
+    color: #191919;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+    line-height: 1;
+    margin: 18px 0 0;
+}
+#main .title{
+    width: 100%;
+    height: 221px;
+    padding: 100px 0 80px;
+    text-align: center;
+    line-height: 42px;
+    color: #191919;
+    font-size: 32px;
+}
+#main .content{
+    width: 845px;
+    margin: 0 auto;
+}
+.content .left{
+    float: left;
+    width: 360px;
+    height: 420px;
+}
+.content .left .img_box{
+    background: #F7F7F7;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.content .left .img_box img{
+    width: 160px;
+    height: 160px;
+}
+.content .left p{
+    text-align: center;
+    margin-top: 50px;
+    line-height: 22px;
+    color: #838383;
+    font-size: 12px;
+}
+.content .center{
+    float: left;
+    width: 1px;
+    height: 300px;
+    margin: 0 60px;
+    background: rgba(0,0,0,0.1);
+}
+.content .right{
+    float: left;
+    width: 360px;
+    height: 420px;
+}
+.content .right #uname,.content .right #pword{
+    width: 358px;
+    height: 48px;
+    text-align: left;
+    font-size: 14px;
+    color: #191919;
+    line-height: 48px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+.pw{
+    margin-top: 26px;
+    position: relative;
+}
+.pw i{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    margin-right: 18px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #999;
+}
+.content .right .message{
+    padding-top: 16px;
+    width: 112px;
+    height: 37px;
+}
+.content .right .message a{
+    line-height: 21px;
+    font-size: 16px;
+    color: #007dff;
+}
+.btn{
+    display: block;
+    margin-top: 40px;
+    width: 360px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    background: #CA141D;
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    opacity: 0.38;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.link{
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.link span{
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 16px;
+}
+.link span a{
+    color: #007dff;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/rester.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/jquery1.12.4.min.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="h_inner container">
+            <div class="logo">
+                <img src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_61/logos/HUAWEI.svg" alt="">
+            </div>
+            <div class="webname">
+                <span class="line"></span>
+                <b>华为商城</b>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="title">华为帐号登录</div>
+        <div class="content">
+            <div class="left">
+                <div class="img_box">
+                    <img src="data:image/png;base64,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" alt="">
+                </div>
+                <p>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</p>
+            </div>
+            <div class="center"></div>
+            <div class="right">        
+                <p class="un"><input type="text" id="uname" placeholder="手机号/邮件地址/华为号"></p>
+                <p class="pw"><input type="password" id="pword" placeholder="密码"><i class="iconfont icon-biyan"></i></p>
+                <div class="message">
+                    <a href="#">短信验证码登录</a>
+                </div>
+                <button class="btn">登录</button>
+                <p class="link">
+                    <span><a href="#">注册</a></span>
+                    <span><a href="#">忘记密码</a></span>
+                    <span><a href="#">遇到问题</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
