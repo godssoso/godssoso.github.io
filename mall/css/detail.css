@@ -1,0 +1,272 @@
+.h5{
+    width: 100%;
+    height: 5px;
+    background: #f9f9f9;
+}
+.title{
+    margin-top: 5px;
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.title a{
+    color: #666;
+}
+.title span{
+    color: #333;
+}
+.pic{
+    float: left;
+    width: 450px;
+}
+.pic .sImg{
+    position: relative;
+    width: 450px;
+    height: 450px;
+}
+.pic .sImg>img{
+    width: 100%;
+    height: 100%;
+}
+.pic .sImg .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 227px;
+    width: 227px;
+    border: 1px solid #c4c4c4;
+    background: rgba(255,255,255,0.5);
+    display: none;
+    cursor: move;
+}
+.pic .sImg .bigImg{
+    position: absolute;
+    top: 0;
+    left: 460px;
+    width: 404px;
+    height: 404px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    display: none;
+    z-index: 10;
+}
+.pic .sImg .bigImg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img_nav{
+    position: relative;
+    margin-top: 18px;
+    width: 450px;
+    height: 68px;
+    overflow: hidden;
+}
+.img_nav>span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    text-align: center;
+    color: #ccc;
+    top: 19px;
+}
+.img_nav>span i{
+    font-size: 20px;
+}
+.img_nav .left{
+    left: 0;
+}
+.img_nav .right{
+    right: 0;
+}
+.img_nav>span:hover{
+    background: #f5f5f5;
+}
+.img_nav .warp{
+    position: relative;
+    margin: 0 auto;
+    width: 370px;
+    height: 68px;
+    overflow: hidden;
+}
+.img_nav .warp ul{
+    width: 500%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.img_nav .warp ul li{
+    float: left;
+    padding: 0 3px;
+    border: 1px solid #fff;
+    width: 74px;
+    height: 68px;
+}
+.img_nav .warp ul li.current{
+    border-color: #ca141d;
+}
+.img_nav .warp ul li img{
+    width: 60px;
+    height: 60px;
+    margin: 3px 0 0 3px;
+}
+
+
+.detail{
+    width: 730px;
+    padding-left: 30px;
+    float: right;
+}
+.pro-name{
+    font-size: 21px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+.product-slogan{
+    font-size: 14px;
+    padding-right: 40px;
+    margin-bottom: 12px;
+    position: relative;
+    top: -3px;
+    line-height: 20px;
+    color: #3a3a3a;
+}
+.product-slogan .time{
+    margin-right: 15px;
+    color: #ca141d;
+}
+.product-info{
+    background: #f5f5f5;
+    padding-top: 14px;
+    padding-bottom: 3px;
+    height: 85px;
+}
+.product-info .price{
+    padding-bottom: 4px;
+}
+.product-info .price span{
+    float: left;
+    width: 85px;
+    text-indent: 10px;
+    line-height: 30px;
+    color: #3a3a3a;
+    font-size: 12px;
+}
+.product-info .price em{
+    float: left;
+    font-size: 24px;
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    color: #ca141d;
+}
+.product-info .price em i{
+    font-size: 18px;
+}
+.product-info .promotion{
+    padding-bottom: 4px;
+}
+.product-info .promotion span{
+    float: left;
+    width: 85px;
+    text-indent: 10px;
+    line-height: 30px;
+    color: #3a3a3a;
+    font-size: 12px;
+}
+.product-info .promotion em{
+    float: left;
+    line-height: 18px;
+    height: 18px;
+    border: 1px solid #ca141d;
+    padding: 0 6px;;
+    color: #ca141d;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.product-info .promotion .tag{
+    float: left;
+    font-size: 12px;
+    margin-top: 7px;
+}
+.h20{
+    height: 20px;
+}
+.description{
+    margin-bottom: 10px;
+}
+.description .left{
+    float: left;
+    width: 85px;
+    text-indent: 10px;
+    line-height: 30px;
+}
+.description .right{
+    float: left;
+    height: 55px;
+}
+.description .right p{
+    line-height: 30px;
+}
+.description .right p em{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 5px;
+    cursor: pointer;
+    background: url(../../images/icon50.png) no-repeat 0 -140px;
+}
+.description .right ul li{
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+    padding-left: 18px;
+    line-height: 18px;
+    color: #3a3a3a;
+}
+.description .right ul li::before{
+    content: "√";
+    font-size: 12px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+    line-height: 1;
+    text-align: center;
+    color: #3a3a3a;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: -5px;
+    line-height: 17px;
+}
+.product-id{
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.product-id span{
+    float: left;
+    width: 85px;
+    text-indent: 10px;
+}
+.product-id em{
+    float: left;
+}
+.p_h5{
+    height: 5px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}

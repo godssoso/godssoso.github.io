@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="./css/rester.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <script src="../js/jquery1.12.4.min.js"></script>
+    <script src="./js/detail.js"></script>
+</head>
+<body>
+     <!-- 头部 -->
+     <div id="header">
+        <div class="container h_inner">
+            <ul class="l_nav">
+                <li>
+                    <a href="#">首页</a>
+                    <span class="bg"></span>
+                </li>
+                <li>
+                    <a href="#">华为官网</a>
+                    <span class="bg"></span>
+                </li>
+                <li>
+                    <a href="#">荣耀官网</a>
+                    <span class="bg"></span>
+                </li>
+                <li>
+                    <a href="#">花粉俱乐部</a>
+                    <span class="bg"></span>
+                </li>
+                <li>
+                    <a href="#">V码(优购码)</a>
+                    <span class="bg"></span>
+                </li>
+                <li>
+                    <a href="#">企业购</a>
+                    <span class="bg"></span>
+                </li>
+                <li>
+                    <a href="javascript:;">Select Region</a>
+                    <span class="bg"></span>
+                </li>
+                <li class="s_down">
+                    <a href="javascript:;">更多精彩 <i class="iconfont icon-shangxiajiantou"></i></a>
+                    <div class="b">
+                        <ul>
+                            <li>
+                                <a href="#">EMUL</a>
+                            </li>
+                            <li>
+                                <a href="#">应用市场</a>
+                            </li>
+                            <li>
+                                <a href="#">华为终端云空间</a>
+                            </li>
+                            <li>
+                                <a href="#">开发者联盟</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="r_nav">
+                <li>
+                    <a href="../login.html">请登录</a> &nbsp;<a href="../register.html">注册</a>
+                    <span class="bg"></span>
+                </li>
+                <li>
+                    <a href="#">我的订单</a>
+                    <span class="bg"></span>
+                </li>
+                <li class="s_down">
+                    <a href="#">客户服务 <i class="iconfont icon-shangxiajiantou"></i></a>
+                    <span class="bg"></span>
+                    <div class="b" style="width: 84px;">
+                        <ul>
+                            <li>
+                                <a href="#">服务中心</a>
+                            </li>
+                            <li>
+                                <a href="#">联系客服</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">网站导航 <i class="iconfont icon-shangxiajiantou"></i></a>
+                    <span class="bg"></span>
+                </li>
+                <li>
+                    <a href="#">手机版 <i class="iconfont icon-shangxiajiantou"></i></a>
+                </li>
+                <li class="s_down cart">
+                    <a href="#"><i class="iconfont icon-gouwuchezhengpin"></i> 购物车(0)</a>
+                    <div class="empty b">
+                        <p class="p1"><i class="iconfont icon-gouwuchezhengpin"></i></p>
+                        <p class="p2">您的购物车是空的，赶紧选购吧~</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header下面的top部分 -->
+    <div id="top">
+        <div class="t_inner container">
+            <div class="logo">
+                <a href="#" title="华为商城">
+                    <img src="https://res.vmallres.com/pimages//common/config/logo/SXppnESYv4K11DBxDFc2.png" alt="">
+                </a>
+            </div>
+            <ul class="t_nav">
+                <li class="lipink">
+                    <a href="#" style="color:#fff">华为专区</a>
+                </li>
+                <li class="liblue">
+                    <a href="#" style="color:#fff">荣耀专区</a>
+                </li>
+                <li>
+                    <a href="#">P40系列</a>
+                </li>
+                <li>
+                    <a href="#">荣耀30</a>
+                </li>
+                <li>
+                    <a href="#">智能家居</a>
+                </li>
+            </ul>
+            <div class="search">
+                <form action="#">
+                    <input type="text" class="txt">
+                    <input type="submit" class="btn">
+                    <i class="iconfont icon-sousuo"></i>
+                </form>
+                <div class="txtlink">
+                    <a href="#">Mate40系列</a>
+                    <a href="#">WATHCH FIT</a>
+                </div>
+                <div class="search_history">
+                    <dl>
+                        <dt>热门搜索</dt>
+                        <dd>
+                            <a href="#">MateBook D</a>
+                        </dd>
+                        <dd>
+                            <a href="#">nova8 Pro</a>
+                        </dd>
+                        <dd>
+                            <a href="#">nova8</a>
+                        </dd>
+                        <dd>
+                            <a href="#">平板</a>
+                        </dd>
+                        <dd>
+                            <a href="#">华为智慧屏S</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Mate 30E pro</a>
+                        </dd>
+                        <dd>
+                            <a href="#">耳机</a>
+                        </dd>
+                        <dd>
+                            <a href="#">P40</a>
+                        </dd>
+                        <dd>
+                            <a href="#">手表</a>
+                        </dd>
+                        <dd>
+                            <a href="#">音箱</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容 -->
+    <p class="h5"></p>
+    <div id="main">
+        <div class="container content clearfix">
+            <div class="title">
+                <a href="#" title="首页">首页</a>
+                &nbsp;&gt;&nbsp;
+                <a href="#" title="手机">手机</a>
+                &nbsp;&gt;&nbsp;
+                <a href="#" title="HUAWEI nova系列">HUAWEI nova系列</a>
+                &nbsp;&gt;&nbsp;
+                <span>HUAWEI nova 8 8GB+128GB 全网通版（亮黑色）</span>
+            </div>
+            <div class="pic">
+                <div class="sImg">
+                    <img src="https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
+                    <div class="mask"></div>
+                    <div class="bigImg">
+                        <img src="https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
+                    </div>
+                </div>
+                <div class="img_nav">
+                    <span class="left"><i class="iconfont icon-shangxiajiantou-copy1"></i></span>
+                    <div class="warp">
+                        <ul>
+                            <li class="current">
+                                <img src="https://res.vmallres.com/pimages//display/10086232069466/78_78_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="https://res.vmallres.com/pimages//product/6941487210626/78_78_ACE1CD80845649CE0FB2B5131E3110DCB4BC7CDED5B102BDmp.png" alt="">
+                            </li>
+                            <li>
+                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_0FFFA494449435E297820BB642A826B57D919073B4E08786.png" alt="">
+                            </li>
+                            <li>
+                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_0F33FAF05385753D0AE0C4C507B40E5D18C9539BBC4E9A79.png" alt="">
+                            </li>
+                            <li>
+                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_1841832235B3E3568E4C6F9ABFF018C5261DD2BA7229C4A6.png" alt="">
+                            </li>
+                            <li>
+                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_3FC8B3A9142523D503E22476AC14C008EC0972905E0D59FF.png" alt="">
+                            </li>
+                            <li>
+                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_DAF99DDE3318020FBFB5E8D794F6CDE44503F3C551902225.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="right"><i class="iconfont icon-shangxiajiantou-copy"></i></span>
+                </div>
+            </div>
+            <div class="detail">
+                <h2 class="pro-name">HUAWEI nova 8 8GB+128GB 全网通版（亮黑色）</h1>
+                <div class="product-slogan">
+                    <span class="time">10:08限时开售！</span>
+                    <span>66W华为超级快充，90Hz OLED曲面屏，麒麟985 5G SoC芯片，6400万魅力四摄，7.64mm纤薄机身，3D石墨烯散热</span>
+                </div>
+                <div class="product-info">
+                    <div class="price clearfix">
+                        <span>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</span>
+                        <em><i>￥</i> 3299.00</em>
+                    </div>
+                    <div class="promotion clearfix">
+                        <span>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</span>
+                        <em>赠送积分</em>
+                        <div class="tag">购买即赠商城积分，积分可抵现~</div>
+                    </div>
+                </div>
+                <div class="h20"></div>
+                <div class="description clearfix">
+                    <div class="left">服务说明</div>
+                    <div class="right">
+                        <p><span>预计1月22日前发货</span> <em></em></p>
+                        <ul>
+                            <li>已满48元已免运费</li>
+                            <li>由华为商城负责发货，并提供售后服务</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-id">
+                    <span>商品编码</span>
+                    <em>2601010250301</em>
+                </div>
+                <div class="p_h5"></div>
+                <div class="line"></div>
+                <div class="product-color">
+                    <span>选择颜色</span>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <div class="f_inner container">
+            <!-- 口号 -->
+            <div class="slogan">
+                <ul>
+                    <li class="s1">
+                        <a href="#">
+                            <i></i>
+                            百强企业 品质保证
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <a href="#">
+                            <i></i>
+                            7天退货 15天换货
+                        </a>
+                    </li>
+                    <li class="s3">
+                        <a href="#">
+                            <i></i>
+                            48元起免运费
+                        </a>
+                    </li>
+                    <li class="s4">
+                        <a href="#">
+                            <i></i>
+                            2000家服务店 全国联保
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 服务 -->
+            <div class="service clearfix">
+                <div class="service_l">
+                    <dl class="s1">
+                        <dt>
+                            <p class="title">
+                                购物相关
+                            </p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">购物指南</a>
+                                </li>
+                                <li>
+                                    <a href="#">配送方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">常见问题</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s2">
+                        <dt>
+                            <p class="title">
+                                保修与退换货
+                            </p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                   <a href="#">保修政策</a>
+                                </li>
+                                <li>
+                                    <a href="#">退换货政策</a>
+                                </li>
+                                <li>
+                                   <a href="#">保修状态查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">配件防伪查询</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s3">
+                        <dt>
+                            <p class="title">
+                                维修与技术支持
+                            </p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">服务店</a>
+                                </li>
+                                <li>
+                                    <a href="#">预约维修</a>
+                                </li>
+                                <li>
+                                   <a href="#">手机寄修</a>
+                                </li>
+                                <li>
+                                    <a href="#">备件价格查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">上门服务</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s4">
+                        <dt>
+                            <p class="title">
+                                特色服务
+                            </p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">防伪查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">补购保障</a>
+                                </li>
+                                <li>
+                                    <a href="#">以旧换新</a>
+                                </li>
+                                <li>
+                                    <a href="#">礼品包装</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s5">
+                        <dt>
+                            <p class="title">
+                                关于我们
+                            </p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">公司介绍</a>
+                                </li>
+                                <li>
+                                    <a href="#">华为商城简介</a>
+                                </li>
+                                <li>
+                                    <a href="#">华为零售店</a>
+                                </li>
+                                <li>
+                                    <a href="#">商家中心</a>
+                                </li>
+                                <li>
+                                    <a href="#">意见反馈</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s6">
+                        <dt>
+                            <p class="title">友情链接 <span><i class="iconfont icon-shangxiajiantou-copy1"></i><i class="iconfont icon-shangxiajiantou-copy"></i></span></p>
+                        </dt>
+                        <dd >
+                            <ol>
+                                <li>
+                                    <a href="#">华为集团</a>
+                                </li>
+                                <li>
+                                    <a href="#">华为CBG官网</a>
+                                </li>
+                                <li>
+                                    <a href="#">花粉俱乐部</a>
+                                </li>
+                                <li>
+                                    <a href="#">华为云</a>
+                                </li>
+                                <li>
+                                    <a href="#">华为应用市场</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="service_r">
+                   <div class="p1">950805</div>
+                   <div class="p2">7x24小时客服热线（仅收市话费）</div>
+                   <div class="p3">
+                       <a href="#">
+                           <i class="iconfont icon-zaixiankefu"></i>
+                           在线客服
+                       </a>
+                   </div>
+                   <div class="p4">
+                       <h2>关注Vmall：</h2>
+                       <ul>
+                           <li>
+                               <a href="javascript:;">
+                                   <i class="iconfont icon-iconfontweixin"></i>
+                               </a>
+                               <div class="img">
+                                   <img src="https://res.vmallres.com/pimages//pages/cdnImages/O3KMTpn7HHJrc3oZjphy.png" alt="">
+                               </div>
+                           </li>
+                           <li>
+                               <a href="#">
+                                   <i class="iconfont icon-toutiao"></i>
+                               </a>
+                           </li>
+                           <li>
+                                <a href="#">
+                                    <i class="iconfont icon-weibo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="iconfont icon-baidu"></i>
+                                </a>
+                            </li>
+                       </ul>
+                   </div>
+                </div>
+            </div>
+            <!-- copyright -->
+            <div class="copyright">
+                <div class="c_left">
+                    <a href="#" title="华为商城">
+                        <img src="https://res.vmallres.com/pimages/sale/2019-01/wLelYbpMVWbj9Xpaa5Fk.png" alt="">
+                    </a>
+                </div>
+                <div class="c_center">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">华为集团</a>
+                        </li>
+                        <li>
+                            <a href="#">华为CBG官网</a>
+                        </li>
+                        <li>
+                            <a href="#">花粉俱乐部</a>
+                        </li>
+                        <li>
+                            <a href="#">华为应用市场</a>
+                        </li>
+                        <li>
+                            <a href="#">EMUI</a>
+                        </li>
+                        <li>
+                            <a href="#">华为终端云空间</a>
+                        </li>
+                        <li>
+                            <a href="#">开发者联盟</a>
+                        </li>
+                        <li>
+                            <a href="#">华为商城手机版</a>
+                        </li>
+                        <li class="last">
+                            <a href="#">网站地图</a>
+                        </li>
+                    </ul>
+                    <a href="#">隐私声明</a> <a href="#">服务协议</a> <a href="#">COOKIES</a> Copyright © 2012-2021  华为终端有限公司 版权所有 <a href="#">粤ICP备19015064号</a> <em>|</em> <a href="#">粤公网安备 44190002003939号</a><br>
+                    增值电信业务经营许可证：粤B2-20190762 <em>|</em> 备案主体编号：44201919072182 <br>
+                    <a href="#">互联网药品信息服务资格证（粤）-非经营性-2020-0102</a>  | 粤东食药监械经营备20203930
+                </div>
+                <div class="c_right">
+                    <a href="#" title="电子营业执照">
+                        <img src="https://res.vmallres.com/pimages/template/content/2016/20160226162415360.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

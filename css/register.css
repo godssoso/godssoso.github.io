@@ -1,0 +1,295 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+body,html{
+    height: 100%;
+}
+#header{
+    height: 48px;
+    min-width: 1200px;
+    background: rgba(0,0,0,0.05);
+}
+.h_inner{
+    height: 48px;
+}
+.h_inner .logo{
+    float: left;
+    vertical-align: middle;
+    margin: 12px 0 0;
+}
+.h_inner .logo img{
+    height: 24px;
+    width: 108px;
+    margin-left: 4px;
+    margin-top: 0!important;
+}
+.h_inner .webname{
+    font-size: 20px;
+    line-height: 48px;
+    vertical-align: middle;
+    float: left;
+}
+.h_inner .webname .line{
+    width: 1px;
+    height: 20px;
+    float: left;
+    vertical-align: middle;
+    background: rgba(0,0,0,.2);
+    margin: 14px 16px;
+}
+.h_inner .webname b{
+    color: #191919;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+    line-height: 1;
+    margin: 18px 0 0;
+}
+#main{
+    height: 788px;
+    min-width: 1200px;
+}
+.type{
+    float: left;
+    margin-top: 40px;
+    width: 272px;
+    height: 100px;
+}
+.type p{
+    width: 100%;
+    height: 50px;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.05);
+    cursor: pointer;
+    line-height: 18px;
+    font-size: 14px;
+    color: #191919;
+    text-align: center;
+}
+.type p i{
+    float: left;
+    background-image: url(../images/phoneIcon.svg);
+    background-size: 16px 16px;
+    margin: 0 8px;
+    width: 16px;
+    height: 16px;
+}
+.type p span{
+    float: left;
+}
+.type .email{
+    background: #fff;
+}
+.type .email i{
+    background-image: url(../images/mailIcon.svg);
+}
+.type p:hover{
+    background: #e5f2ff;
+}
+.content{
+    width: 960px;
+    height: 788px;
+    padding: 60px 260px 38px;
+    margin: 0 auto;
+}
+.title{
+    height: 72px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.title .top{
+    font-size: 32px;
+    color: #191919;
+    line-height: 42px;
+}
+.title .bottom{
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #191919;
+}
+.title .bottom a{
+    color: #007dff;
+}
+.title .bottom a i{
+    font-size: 24px;
+    vertical-align: middle;
+}
+.box{
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    line-height: 48px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    position: relative;
+}
+.country .left{
+    float: left;
+    padding:0 16px;
+    font-size: 14px;
+    color: #191919;
+}
+.country .right{
+    float: right;
+    font-size: 14px;
+    color: #191919;
+}
+.country .right i{
+    display: inline-block;
+    width: 12px;
+    height: 7px;
+    vertical-align: middle;
+    margin: 0 16px 0 8px;
+    background: url(../images/ic_hint_dropdown.svg) no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+.tel_num span{
+    float: left;
+    width: 130px;
+    padding: 0 16px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #191919;
+    position: relative;
+}
+.tel_num span i{
+    display: inline-block;
+    width: 12px;
+    height: 7px;
+    vertical-align: middle;
+    margin: 0 16px 0 8px;
+    background: url(../images/ic_hint_dropdown.svg) no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+.tel_num span em{
+    position: absolute;
+    width: 1px;
+    height: 27px;
+    background: #d9d9d9;
+    top: 12px;
+    right: 13px;
+}
+.tel_num input{
+    float: right;
+    position: relative;
+    left: 16px;
+    width: 308px;
+    height: 100%;
+    border: 0;
+    background:#f2f2f2;
+}
+.messageTest{
+    position: relative;
+}
+#note{
+    padding: 0 16px;
+}
+.messageTest .get{
+    position: absolute;
+    height: 48px;
+    width: 70px;
+    margin-right: 16px;
+    right: 0;
+    top: 0;
+    line-height: 48px;
+    font-size: 14px;
+    color: #007dff;
+    opacity: 0.38;
+}
+#pword,#pword2{
+    padding: 0 16px;
+}
+.pw{
+    position: relative;
+}
+.pw i{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    right: 0;
+    top: 13px;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+}
+.pw .error{
+    display: none;
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    line-height: 14px;
+    left: 16px;
+    top: 60px;
+}
+#pword2{
+    margin-bottom: 45px;
+}
+
+.date .left{
+    padding: 0 16px;
+    float: left;
+    line-height: 48px;
+    font-size: 14px;
+    color: #191919;
+}
+.date .right{
+    float: right;
+    line-height: 48px;
+    font-size: 14px;
+    color: #191919;
+}
+.date .right i{
+    display: inline-block;
+    width: 12px;
+    height: 7px;
+    vertical-align: middle;
+    margin: 0 16px 0 8px;
+    background: url(../images/ic_hint_dropdown.svg) no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+.btn{
+    display: block;
+    border-radius: 8px;
+    background: #007dff;
+    border: 1px solid #ccc;
+    width: 310px;
+    font-size: 18px;
+    margin: 18px auto 0;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 16px;
+    opacity: 0.38;
+    outline: none;
+    cursor: pointer;
+}
+
+#footer{
+    width: 100%;
+    padding-top: 34px;
+    height: 110px;
+    background: rgba(0,0,0,0.05);
+}
+#footer .f_inner{
+    height: 43px;
+}
+#footer .f_inner .top a{
+    font-size: 14px;
+    color: #000;
+    padding: 0 10px;
+}
+
+#footer .f_inner .top .foot_em{
+    font-size: 16px;
+    color: rgba(0,0,0,0.1);
+}

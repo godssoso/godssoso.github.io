@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>ic_bar_email</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="90.5989625%" cy="-6.64131527%" fx="90.5989625%" fy="-6.64131527%" r="472.29602%" gradientTransform="translate(0.905990,-0.066413),scale(0.121212,1.000000),rotate(170.086855),translate(-0.905990,0.066413)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="ic_bar_email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="" id="Path-8" stroke="#979797" stroke-width="4"></path>
+        <g id="phone" transform="translate(32.333333, 16.333333)">
+            <polygon id="Rectangle-10" points="0.222222222 0.212121212 32.4444444 0.212121212 32.4444444 3.42424242 0.222222222 3.42424242"></polygon>
+        </g>
+        <g id="编组" opacity="0.900000036" transform="translate(12.000000, 20.000000)" stroke="#000000" stroke-width="6">
+            <rect id="矩形" x="0" y="0" width="72" height="60" rx="8"></rect>
+            <path d="M0,4 L29.9201924,30.9229444 C32.9341803,33.6350068 37.5005168,33.6634307 40.5480332,30.9890992 L71.3032795,4 L71.3032795,4" id="路径-29"></path>
+        </g>
+    </g>
+</svg>

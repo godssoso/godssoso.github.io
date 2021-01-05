@@ -12,6 +12,30 @@ $(function(){
         $(this).css({background:'#2e2828',height:36}).children('a').css('color','#afafaf').children('i').removeClass('icon-shang').addClass('icon-shangxiajiantou').parent().siblings('.b').hide();
     })
 
+    //搜索框
+    $('.search').find('.txt').focus(function(){
+        $('.txtlink').hide();
+        $('.search_history').show();
+        if($(this).val()){
+            $('.search_history').hide();
+        }
+    })
+    $('.search').find('.txt').blur(function(){
+        $('.txtlink').show();
+        $('.search_history').hide();
+        if($(this).val()){
+            $('.txtlink').hide();
+        }
+    })
+    $('.search').find('.txt').on('input',function(){
+        $('.search_history').hide();
+        $('.txtlink').hide();
+        if(!$(this).val()){
+            $('.search_history').show();
+        }
+    })
+
+
 
     //banner轮播图
     function Play(banner,ul){
