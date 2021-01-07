@@ -135,7 +135,9 @@ $(function(){
                     password:$('#pword').val()
                  },
                 success:function(res){
-                    console.log(res);
+                    if(res.Code == 1){
+                        location.href = './login.html';
+                    }
                 }
             })
         }

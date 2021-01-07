@@ -30,8 +30,10 @@ $(function(){
         if($(this).val()){
             $(this).next().css('color','#000');
             $('.error').hide();
+            light();
         }else{
             $(this).next().css('color','#999');
+            light();
         }
         $(this).blur(function(){
             if(!$(this).val()){
@@ -51,4 +53,42 @@ $(function(){
             $(this).toggleClass('icon-zhengyan').prev().prop('type','password');
         }
     })
+    var index = 0;
+    function light(){
+        if($('#uname').val() && $('#pword').val()){
+            $('.btn').css('opacity',1);
+            index = 1;
+        }else{
+            $('.btn').css('opacity',0.38);
+            index =0;
+        }
+    }
+
+
+    //登录
+    $('.btn').click(function(){
+        if(index){
+           $.ajax({
+               url:"http://39.108.139.186:9999/login",
+               type:'post',
+               dataType:'json',
+               data:{
+                   username:$('#uname').val(),
+                   password:$('#pword').val()
+               },
+               success:function(res){
+                    if(res.Code == 1){
+                        document.cookie = 'username='+$('#uname').val();
+                        location.href = './mall/mall.html';
+                    }else if(res.Code == 0){
+                        alert('登陆失败，帐号或密码错误，请重新登录');
+                        $('#uname').val('');
+                        $('#pword').val('');
+                        light();
+                    }
+               }
+           })
+        }
+    })
+
 })

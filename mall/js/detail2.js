@@ -51,13 +51,13 @@ $(function(){
         }
         $('.warp>ul').animate({left:-index * ($('.warp>ul>li').width() + 10)});
     })
-    var urlArr = ['https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg',
-'https://res.vmallres.com/pimages//product/6941487210626/800_800_ACE1CD80845649CE0FB2B5131E3110DCB4BC7CDED5B102BDmp.png',
-'https://res.vmallres.com/pimages//product/6941487210626/group//800_800_0FFFA494449435E297820BB642A826B57D919073B4E08786.png',
-'https://res.vmallres.com/pimages//product/6941487210626/group//800_800_0F33FAF05385753D0AE0C4C507B40E5D18C9539BBC4E9A79.png',
-'https://res.vmallres.com/pimages//product/6941487210626/group//800_800_1841832235B3E3568E4C6F9ABFF018C5261DD2BA7229C4A6.png',
-'https://res.vmallres.com/pimages//product/6941487210626/group//800_800_3FC8B3A9142523D503E22476AC14C008EC0972905E0D59FF.png',
-'https://res.vmallres.com/pimages//product/6941487210626/group//800_800_DAF99DDE3318020FBFB5E8D794F6CDE44503F3C551902225.png']
+    var urlArr = ['https://res.vmallres.com/pimages//product/6901443356867/800_800_6FE00BC588F53A91593E4221A2FF7B39BC0D05F41F669566mp.png',
+'https://res.vmallres.com/pimages//product/6901443356867/group//800_800_A3D99D5468F5307A3290E1C5C577C02ACF6078564DD3B41F.PNG',
+'https://res.vmallres.com/pimages//product/6901443356867/group//800_800_486290038D0110C1BC6D0ABA78144F2358EA41D9D97A252A.png',
+'https://res.vmallres.com/pimages//product/6901443356867/group//800_800_14025D5E221A75DFBCD5177714B10121E3990783CD6EE494.png',
+'https://res.vmallres.com/pimages//product/6901443356867/group//800_800_2B9D36D50425ED4F09471B92FC07F2DAD098A7A2C0414B38.png',
+'https://res.vmallres.com/pimages//product/6901443356867/group//800_800_597F3209269CAFF9840D3F4D457C4224A87F45E18C94954F.png',
+'https://res.vmallres.com/pimages//product/6901443356867/group//800_800_FB3F4BBF3958AEED3FCCE9FEEF9B2D8A488C57A63469EEEB.png']
     $('.warp>ul>li').mouseover(function(){
         $(this).addClass('current').siblings().removeClass('current');
         $('.sImg>img').prop('src',urlArr[$(this).index()]);
@@ -163,7 +163,7 @@ $(function(){
                 data:{
                     username:getCookie('username'),
                     id:$('#product-id').html(),
-                    picture:$('.img_nav img').eq(1).prop('src'),
+                    picture:$('.img_nav img').eq(0).prop('src'),
                     title:$('.pro-name').html(),
                     detail:dataStr,
                     price:$('.price b').html(),

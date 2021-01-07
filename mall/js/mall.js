@@ -37,6 +37,124 @@ $(function(){
 
 
 
+
+    //登录显示
+    function getCookie(key){
+        str = "";
+        var tmp = document.cookie.split('; ');
+        for(var i=0;i<tmp.length;i++){
+            var t = tmp[i].split('=');
+            if(t[0]===key){
+                str = t[1];
+            }
+        }
+        return str;   
+    }
+    // function setCookie(key,value,expires){
+    //     if(expires){
+    //         var time = new Date();
+    //         time.setTime(time.getTime()-8*60*60*1000 + 1000*expires);
+    //         document.cookie = key+"="+value+";expires="+time;
+    //     }else{
+    //         document.cookie = key+"="+value;
+    //     }
+    
+    // }
+    // var falg = false;
+    if(getCookie('username')){
+        // falg = true;
+        var str = getCookie('username').substr(0,2)+'*****';
+        $('.h_inner .r_nav>li').eq(0).html(str+"<i class='iconfont icon-shangxiajiantou'></i><span class='bg'></span>");
+        $('.unlogin').find('.un_top').html('您好！ &nbsp;'+str);
+    }
+    // else{
+    //     falg = false;
+    // }
+    // $('.h_inner .r_nav>li').eq(0).mouseover(function(){
+    //     if(falg){
+    //         $(this).css({background:'#fff',color:'#ca141d'}).children('i').removeClass('icon-shangxiajiantou').addClass('icon-shang').siblings('div').show();
+    //     }
+    // })
+    // $('.h_inner .r_nav>li').eq(0).mouseout(function(){
+    //     if(falg){
+    //         $(this).css({background:'#2e2828',color:'#afafaf'}).children('i').removeClass('icon-shang').addClass('icon-shangxiajiantou').siblings('div').hide();
+    //     }
+    // })
+    // $('.sliderDown').click(function(){
+    //     falg=false;
+    //     setCookie('username',getCookie('username'),-1);
+    //     var str2 = "<a href='../login.html'>请登录</a> &nbsp;<a href='../register.html'>注册</a><span class='bg'></span><div class='sliderDown'>退出登录</div>";    
+    //     $('.h_inner .r_nav>li').eq(0).html(str2);
+    //     // $(this).parent().css({background:'#2e2828',color:'#afafaf'});
+    // })
+
+
+    //侧边栏列表渲染
+    // var arr = [0,1,2,3,4,5,6,7,8,9]
+    $.ajax({
+        url:'./list.json',
+        dataType:'json',
+        success:function (res) {
+            // console.log(res[$(that).index()]);
+           for(var i = 0;i<10;i++){
+            $.each(res[i][0],function (index,item) {
+                $('.left_list>ul>li').eq(i).find('ul').eq(0).append(`<li class="subcate-item">
+                <a href="#">
+                    <img src=${item.src} alt="">
+                    <p><span>${item.dec}</span></p>
+                </a>
+            </li>`)
+            })
+            $.each(res[i][1],function (index,item) {
+                $('.left_list>ul>li').eq(i).find('ul').eq(1).children('.subcate-btn').before(`<li class="subcate-item">
+                <a href="#">
+                    <img src=${item.src} alt="">
+                    <p><span>${item.dec}</span></p>
+                </a>
+            </li>`)
+            })
+           }
+            // $(that).children('.pros').show().parent().siblings().children('.pros').hide();
+        }
+    })
+
+
+    $('.left_list>ul>li').mouseover(function(){
+        $(this).children('.pros').show().parent().siblings().children('.pros').hide();
+
+        // console.log(111);
+        // $(this).css('background','rgba(255,255,255,1)')
+        // $.ajax({
+        //     url:'./list.json',
+        //     dataType:'json',
+        //     success:function (res) {
+        //         // console.log(res[$(that).index()]);
+        //         $.each(res[$(that).index()][0],function (index,item) {
+        //             $(that).find('ul').eq(0).append(`<li class="subcate-item">
+        //             <a href="#">
+        //                 <img src=${item.src} alt="">
+        //                 <p><span>${item.dec}</span></p>
+        //             </a>
+        //         </li>`)
+        //         })
+        //         $.each(res[$(that).index()][1],function (index,item) {
+        //             $(that).find('ul').eq(1).children('.subcate-btn').before(`<li class="subcate-item">
+        //             <a href="#">
+        //                 <img src=${item.src} alt="">
+        //                 <p><span>${item.dec}</span></p>
+        //             </a>
+        //         </li>`)
+        //         })
+        //         $(that).children('.pros').show().parent().siblings().children('.pros').hide();
+        //     }
+        // })
+    })
+    $('.left_list').mouseout(function(){
+        $(this).find('.pros').hide();
+    })
+
+
+
     //banner轮播图
     function Play(banner,ul){
         this.banner = $(banner);//总轮播图容器

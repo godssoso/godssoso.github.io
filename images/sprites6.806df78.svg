@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="322px" viewBox="0 0 400 322" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>购买进度</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="5 9.04128408 7.12525494 10.7851742 12 6.7851742"></polyline>
+        <filter x="-115.1%" y="-151.4%" width="330.2%" height="495.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.75" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-3" points="5 9.04128408 7.12525494 10.7851742 12 6.7851742"></polyline>
+        <filter x="-115.1%" y="-151.4%" width="330.2%" height="495.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.75" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-5" points="5 9.04128408 7.12525494 10.7851742 12 6.7851742"></polyline>
+        <filter x="-115.1%" y="-151.4%" width="330.2%" height="495.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.75" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-7" points="5 9.04128408 7.12525494 10.7851742 12 6.7851742"></polyline>
+        <filter x="-115.1%" y="-151.4%" width="330.2%" height="495.1%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.75" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="购买进度" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-4" transform="translate(42.000000, 27.000000)">
+            <g id="分组-2" transform="translate(0.000000, 109.000000)">
+                <polygon id="矩形" fill="#D1D1D1" points="36 9 278 9 278 10 36 10"></polygon>
+                <g id="进度条正在进行" transform="translate(271.000000, 0.000000)">
+                    <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="8.5" cy="8.5" r="3.00667039"></circle>
+                </g>
+                <g id="进度条已完成" transform="translate(19.000000, 1.000000)">
+                    <g>
+                        <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                        <g id="路径-2" stroke-linecap="round" stroke-linejoin="round">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#FFFFFF" stroke-width="1.5" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+                <g id="进度条已完成" transform="translate(145.000000, 1.000000)">
+                    <g>
+                        <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                        <g id="路径-2" stroke-linecap="round" stroke-linejoin="round">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use stroke="#FFFFFF" stroke-width="1.5" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+                <text id="我的购物车" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572" fill="#333333">
+                    <tspan x="0" y="35">我的购物车</tspan>
+                </text>
+                <text id="填写核对订单" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572" fill="#333333">
+                    <tspan x="118" y="35">填写核对订单</tspan>
+                </text>
+                <text id="成功提交订单" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572" fill="#333333">
+                    <tspan x="244" y="35">成功提交订单</tspan>
+                </text>
+            </g>
+            <g id="分组-2-copy-2" transform="translate(118.000000, 216.000000)">
+                <polygon id="矩形" fill="#D1D1D1" points="38 9 160 9 160 10 38 10"></polygon>
+                <g id="进度条正在进行" transform="translate(153.000000, 0.000000)">
+                    <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="8.5" cy="8.5" r="3.00667039"></circle>
+                </g>
+                <g id="进度条已完成" transform="translate(27.000000, 1.000000)">
+                    <g>
+                        <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                        <g id="路径-2" stroke-linecap="round" stroke-linejoin="round">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use stroke="#FFFFFF" stroke-width="1.5" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                </g>
+                <text id="填写核对订单" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572" fill="#333333">
+                    <tspan x="0" y="35">填写核对订单</tspan>
+                </text>
+                <text id="成功提交订单" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572" fill="#333333">
+                    <tspan x="126" y="35">成功提交订单</tspan>
+                </text>
+            </g>
+            <g id="分组-2" transform="translate(0.000000, 55.000000)">
+                <polygon id="矩形" fill="#D1D1D1" points="36 9 278 9 278 10 36 10"></polygon>
+                <g id="进度条未开始" transform="translate(269.000000, 1.000000)" fill="#D1D1D1">
+                    <g id="3-copy">
+                        <circle cx="8.5" cy="8.2851742" r="3.5"></circle>
+                    </g>
+                </g>
+                <g id="进度条正在进行" transform="translate(145.000000, 1.000000)">
+                    <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="8.5" cy="8.5" r="3.00667039"></circle>
+                </g>
+                <g id="进度条已完成" transform="translate(19.000000, 0.000000)">
+                    <g>
+                        <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                        <g id="路径-2" stroke-linecap="round" stroke-linejoin="round">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                            <use stroke="#FFFFFF" stroke-width="1.5" xlink:href="#path-7"></use>
+                        </g>
+                    </g>
+                </g>
+                <text id="我的购物车" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572" fill="#333333">
+                    <tspan x="0" y="35">我的购物车</tspan>
+                </text>
+                <text id="填写核对订单" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572" fill="#333333">
+                    <tspan x="118" y="35">填写核对订单</tspan>
+                </text>
+                <text id="成功提交订单" fill="#D1D1D1" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572">
+                    <tspan x="244.308572" y="35">成功提交订单</tspan>
+                </text>
+            </g>
+            <g id="分组-2-copy" transform="translate(118.000000, 163.000000)">
+                <polygon id="矩形" fill="#D1D1D1" points="38 8 160 8 160 9 38 9"></polygon>
+                <g id="进度条未开始" transform="translate(151.000000, -0.000000)" fill="#D1D1D1">
+                    <g id="3-copy">
+                        <circle cx="8.5" cy="8.2851742" r="3.5"></circle>
+                    </g>
+                </g>
+                <g id="进度条正在进行" transform="translate(27.000000, 0.000000)">
+                    <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="8.5" cy="8.5" r="3.00667039"></circle>
+                </g>
+                <text id="填写核对订单" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572" fill="#333333">
+                    <tspan x="0" y="34">填写核对订单</tspan>
+                </text>
+                <text id="成功提交订单" fill="#D1D1D1" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572">
+                    <tspan x="126.308572" y="34">成功提交订单</tspan>
+                </text>
+            </g>
+            <g id="分组-2">
+                <polygon id="矩形" fill="#D1D1D1" points="36 10 278 10 278 11 36 11"></polygon>
+                <g id="进度条正在进行" transform="translate(19.000000, 1.000000)">
+                    <circle id="椭圆形" fill="#666666" cx="8.5" cy="8.5" r="8.5"></circle>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="8.5" cy="8.5" r="3.00667039"></circle>
+                </g>
+                <g id="进度条未开始" transform="translate(146.000000, 2.000000)" fill="#D1D1D1">
+                    <g id="3-copy">
+                        <circle cx="8.5" cy="8.2851742" r="3.5"></circle>
+                    </g>
+                </g>
+                <g id="进度条未开始" transform="translate(269.000000, 2.000000)" fill="#D1D1D1">
+                    <g id="3-copy">
+                        <circle cx="8.5" cy="8.2851742" r="3.5"></circle>
+                    </g>
+                </g>
+                <text id="我的购物车" fill="#666666" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572">
+                    <tspan x="0" y="36">我的购物车</tspan>
+                </text>
+                <text id="填写核对订单" fill="#D1D1D1" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572">
+                    <tspan x="118.308572" y="36">填写核对订单</tspan>
+                </text>
+                <text id="成功提交订单" fill="#D1D1D1" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" letter-spacing="-0.1028572">
+                    <tspan x="244.308572" y="36">成功提交订单</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

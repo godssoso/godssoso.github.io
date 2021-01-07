@@ -139,13 +139,13 @@
     left: 0;
     top: -532px;
     cursor: pointer;
-    overflow: hidden;
     z-index: 20;
 }
 .m_inner .left_list>ul{
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    overflow: hidden;
 }
 .m_inner .left_list>ul>li{
     padding-left: 16px;
@@ -154,6 +154,9 @@
     font-size: 15px;
     color: #848484;
     background:#f9f9f9;
+    /* background: #fff; */
+    /* background: rgba(255,255,255,0.7); */
+    /* z-index: 40; */
 }
 .m_inner .left_list>ul>li i{
     float: right;
@@ -161,9 +164,110 @@
     font-size: 20px;
 }
 .m_inner .left_list>ul>li:hover{
-    /* background: rgba(255,255,255,1); */
+    background: rgba(255,255,255,1)!important;
     background: #fff;
 }
+.m_inner .left_list>ul:hover{
+    border-radius: 10px 0 0 10px;
+}
+.left_list>ul>li>.pros{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    height: 440px;
+    width: 516px;
+    text-align: center;
+    background: #fff;
+    padding: 20px 0 0 32px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 46px rgba(0,0,0,0.1);
+    z-index: 99;
+    display: none;
+}
+.pros .subcate-list{
+    width: 242px;
+    height: 100%;
+    margin: 0;
+    float: left;
+}
+.pros .subcate-list li{
+    margin-bottom: 25px;
+}
+.pros .subcate-list li a {
+    display: block;
+    width: 230px;
+    height: 60px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-right: 0;
+}
+.pros .subcate-list li a img{
+    width: 48px;
+    height: 48px;
+    float: left;
+    vertical-align: middle;
+    margin: 0 8px 0 12px;
+}
+.pros .subcate-list li a p{
+    height: 34px;
+    line-height: 17px;
+    position: relative;
+    top: 14px;
+    text-align: left;
+    vertical-align: middle;
+    float: left;
+    color: #666;
+    font-size: 14px;
+    width: 150px;
+}
+.pros .subcate-list li a p span{
+    line-height: 17px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.pros .subcate-list .subcate-btn a{
+    width: 112px;
+    height: 42px;
+    line-height: 42px;
+    margin-top: 8px;
+    margin-left: 36px;
+    border: 1px solid #f2f2f2;
+    border-radius: 0 22px 22px 0;
+    font-size: 13px;
+    color: #999;
+    display: block;
+    position: relative;
+    text-indent: 34px;
+}
+.pros .subcate-list .subcate-btn a::before{
+    content: "";
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    display: block;
+    border-radius: 22px;
+    position: absolute;
+    top: -1px;
+    left: -22px;
+}
+.pros .subcate-list .subcate-btn a::after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #c0c0c0;
+    position: absolute;
+    top: 16px;
+    left: -1px;
+}
+
+
+
+
+
 /* 背景图下登录注册和导航栏 */
 .m_inner .list_box{
     height: 88px;

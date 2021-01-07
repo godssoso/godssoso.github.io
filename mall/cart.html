@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【HUAWEI nova 8】</title>
+    <title>购物车</title>
     <link rel="stylesheet" href="./css/rester.css">
     <link rel="stylesheet" href="./css/iconfont.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/cart.css">
     <script src="../js/jquery1.12.4.min.js"></script>
-    <script src="./js/detail.js"></script>
+    <script src="./js/cart.js"></script>
 </head>
 <body>
-     <!-- 头部 -->
-     <div id="header">
+    <div id="header">
         <div class="container h_inner">
             <ul class="l_nav">
                 <li>
@@ -94,276 +92,193 @@
                 <li>
                     <a href="#">手机版 <i class="iconfont icon-shangxiajiantou"></i></a>
                 </li>
-                <li class="s_down cart">
-                    <a href="./cart.html"><i class="iconfont icon-gouwuchezhengpin"></i> 购物车(0)</a>
-                    <div class="empty b">
-                        <p class="p1"><i class="iconfont icon-gouwuchezhengpin"></i></p>
-                        <p class="p2">您的购物车是空的，赶紧选购吧~</p>
-                    </div>
-                </li>
             </ul>
         </div>
-     </div>
-    <!-- header下面的top部分 -->
+    </div>
     <div id="top">
-        <div class="t_inner container">
-            <div class="logo">
-                <a href="./mall.html" title="华为商城">
-                    <img src="https://res.vmallres.com/pimages//common/config/logo/SXppnESYv4K11DBxDFc2.png" alt="">
-                </a>
+        <div class="container top">
+            <div class="left">
+                <div class="logo">
+                    <a href="./mall.html" title="华为商城">
+                        <img src="https://res.vmallres.com/pimages//sale/2019-01/AF2GXbxrWmRqvyNfYzCl.png" alt="">
+                    </a>
+                </div>
+                <span>我的购物车</span>
             </div>
-            <ul class="t_nav">
-                <li class="lipink">
-                    <a href="#" style="color:#fff">华为专区</a>
-                </li>
-                <li class="liblue">
-                    <a href="#" style="color:#fff">荣耀专区</a>
-                </li>
-                <li>
-                    <a href="#">P40系列</a>
-                </li>
-                <li>
-                    <a href="#">荣耀30</a>
-                </li>
-                <li>
-                    <a href="#">智能家居</a>
-                </li>
-            </ul>
-            <div class="search">
-                <form action="#">
-                    <input type="text" class="txt">
-                    <input type="submit" class="btn">
-                    <i class="iconfont icon-sousuo"></i>
-                </form>
-                <div class="txtlink">
-                    <a href="#">Mate40系列</a>
-                    <a href="#">WATHCH FIT</a>
-                </div>
-                <div class="search_history">
-                    <dl>
-                        <dt>热门搜索</dt>
-                        <dd>
-                            <a href="#">MateBook D</a>
-                        </dd>
-                        <dd>
-                            <a href="#">nova8 Pro</a>
-                        </dd>
-                        <dd>
-                            <a href="#">nova8</a>
-                        </dd>
-                        <dd>
-                            <a href="#">平板</a>
-                        </dd>
-                        <dd>
-                            <a href="#">华为智慧屏S</a>
-                        </dd>
-                        <dd>
-                            <a href="#">Mate 30E pro</a>
-                        </dd>
-                        <dd>
-                            <a href="#">耳机</a>
-                        </dd>
-                        <dd>
-                            <a href="#">P40</a>
-                        </dd>
-                        <dd>
-                            <a href="#">手表</a>
-                        </dd>
-                        <dd>
-                            <a href="#">音箱</a>
-                        </dd>
-                    </dl>
-                </div>
+            <div class="right">
+                <div class="mycurt"></div>
             </div>
         </div>
     </div>
-    <!-- 主体内容 -->
-    <div class="bigMask"></div>
-    <div class="model">
-        <div class="m_title"><span>×</span></div>
-        <p>商品添加成功！</p>
-        <div class="bot">
-            <span class="look">再逛逛</span>
-            <span class="go">去结算</span>
-        </div>
-    </div>
-    <p class="h5"></p>
+
     <div id="main">
-        <div class="container content clearfix">
-            <div class="title">
-                <a href="#" title="首页">首页</a>
-                &nbsp;&gt;&nbsp;
-                <a href="#" title="手机">手机</a>
-                &nbsp;&gt;&nbsp;
-                <a href="#" title="HUAWEI nova系列">HUAWEI nova系列</a>
-                &nbsp;&gt;&nbsp;
-                <span>HUAWEI nova 8 8GB+128GB 全网通版（亮黑色）</span>
+        <div class="container m_inner">
+            <div class="h20"></div>
+            <div class="empty">
+                <div class="icon">
+                    <img src="../images/icon-header-minicart.32e5f81.png" alt="">
+                </div>
+                <p>您的购物车里什么也没有哦~</p>
+                <a href="./mall.html">去逛逛</a>
             </div>
-            <div class="pic">
-                <div class="sImg">
-                    <img src="https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="bigImg">
-                        <img src="https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
+            <div class="products">
+                <div class="pro-top">
+                    <div class="pro-top-left">
+                        <span class="checkAll checked"></span>全选
                     </div>
-                </div>
-                <div class="img_nav">
-                    <span class="left"><i class="iconfont icon-shangxiajiantou-copy1"></i></span>
-                    <div class="warp">
-                        <ul>
-                            <li class="current">
-                                <img src="https://res.vmallres.com/pimages//display/10086232069466/78_78_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="https://res.vmallres.com/pimages//product/6941487210626/78_78_ACE1CD80845649CE0FB2B5131E3110DCB4BC7CDED5B102BDmp.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_0FFFA494449435E297820BB642A826B57D919073B4E08786.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_0F33FAF05385753D0AE0C4C507B40E5D18C9539BBC4E9A79.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_1841832235B3E3568E4C6F9ABFF018C5261DD2BA7229C4A6.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_3FC8B3A9142523D503E22476AC14C008EC0972905E0D59FF.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://res.vmallres.com/pimages//product/6941487210626/group//78_78_DAF99DDE3318020FBFB5E8D794F6CDE44503F3C551902225.png" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <span class="right"><i class="iconfont icon-shangxiajiantou-copy"></i></span>
-                </div>
-            </div>
-            <div class="detail">
-                <h2 class="pro-name">HUAWEI nova 8 8GB+128GB 全网通版（亮黑色）</h1>
-                <div class="product-slogan">
-                    <span class="time">10:08限时开售！</span>
-                    <span>66W华为超级快充，90Hz OLED曲面屏，麒麟985 5G SoC芯片，6400万魅力四摄，7.64mm纤薄机身，3D石墨烯散热</span>
-                </div>
-                <div class="product-info">
-                    <div class="price clearfix">
-                        <span>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</span>
-                        <em><i>￥</i> <b>3299.00</b></em>
-                    </div>
-                    <div class="promotion clearfix">
-                        <span>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</span>
-                        <em>赠送积分</em>
-                        <div class="tag">购买即赠商城积分，积分可抵现~</div>
-                    </div>
-                </div>
-                <div class="h20"></div>
-                <div class="description clearfix">
-                    <div class="left">服务说明</div>
-                    <div class="right">
-                        <p><span>预计1月22日前发货</span> <em></em></p>
-                        <ul>
-                            <li><i class="iconfont icon-dui"></i>已满48元已免运费</li>
-                            <li><i class="iconfont icon-dui"></i>由华为商城负责发货，并提供售后服务</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product-id">
-                    <span>商品编码</span>
-                    <em id="product-id">2601010250301</em>
-                </div>
-                <div class="p_h5"></div>
-                <div class="line"></div>
-                <div class="h-16"></div>
-                <div class="product-color clearfix">
-                    <span>选择颜色</span>
-                    <ul>
-                        <li class="current">
-                            <img src="https://res.vmallres.com/pimages//product/6941487210626/40_40_ACE1CD80845649CE0FB2B5131E3110DCB4BC7CDED5B102BDmp.png" alt="">
-                            <span>亮黑色</span>
-                        </li>
-                        <li>
-                            <img src="https://res.vmallres.com/pimages//product/6941487210619/40_40_1BED94F76D33074373CB7636AC2AEB733F3754C113BF6BBDmp.png" alt="">
-                            <span>普罗旺斯</span>
-                        </li>
-                        <li>
-                            <img src="https://res.vmallres.com/pimages//product/6941487210961/40_40_A3C6ADC52EF33D15ADB8133CAABB7D93FAC596BC57F79FE4mp.png" alt="">
-                            <span>8号色</span>
-                        </li>
-                        <li>
-                            <img src="https://res.vmallres.com/pimages//product/6941487211180/40_40_EDEEDE1B1AEB486FBA71C20F3F96441251B638EAD091A117mp.png" alt="">
-                            <span>绮境森林</span>
-                        </li>
+                    <ul class="clearfix">
+                        <li style="width: 450px;margin-left: 0;text-align: left;">商品</li>
+                        <li>单价</li>
+                        <li>数量</li>
+                        <li>小计</li>
+                        <li>操作</li>
                     </ul>
                 </div>
-                <div class="product-version clearfix">
-                    <span>选择版本</span>
-                    <ul>
-                        <li class="current">
-                            <span>5G全网通 8GB+128GB</span>
-                        </li>
-                        <li>
-                            <span>5G全网通 8GB+256GB</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-package clearfix">
-                    <span>选择套餐</span>
-                    <ul>
-                        <li class="current">
-                            <span>官方标配</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-sev clearfix">
-                    <span>保障服务</span>
-                    <ul>
-                        <li>
-                            <span>碎屏服务宝1年 ￥399 <i class="iconfont icon-shangxiajiantou"></i></span>
-                        </li>
-                        <li>
-                            <span>延长服务宝1年 ￥168 <i class="iconfont icon-shangxiajiantou"></i></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="selected clearfix">
-                    <span>已选择商品：</span>
-                    <p>亮黑色 / 5G全网通 8GB+128GB / 官方标配 </p>
-                </div>
-                <div class="buy clearfix">
-                    <div class="num clearfix">
-                        <input type="text" id="num" value="1" readonly='readonly'>
-                        <div class="right">
-                            <div class="add">+</div>
-                            <div class="cut">-</div>
+                <div class="pro-warp">
+                    <!-- <div class="pro-list">
+                        <div class="pro-list-left">
+                            <span class="checkThis"></span>
+                        </div>
+                        <div class="pro-main">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <img src="https://res.vmallres.com/pimages//product/6901443415908/428_428_129AFEFAE8375F761A9E08DC132A53F306027824EA772535mp.png" alt="">
+                                </a>
+                            </div>
+                            <ul class="clearfix">
+                                <li style="width: 450px;">
+                                    <a href="#" class="pro-title">HUAWEI Mate 30E Pro 5G 全网通 8GB+256GB（翡冷翠）</a>
+                                    <p class="pro-info">翡冷翠 5G全网通 8GB+256GB 官方标配</p>
+                                    <div class="p-label">
+                                        <span>分期免息</span>
+                                    </div>
+                                </li>
+                                <li style="width: 140px;margin-left: 10px;margin-right: -20px;">
+                                    <div class="pro-price">
+                                        <span>￥ 5799.00</span>
+                                    </div>
+                                </li>
+                                <li style="width: 100px;margin-left: 30px;">
+                                    <div class="pro-stock">
+                                        <input type="number" id="num" value="1">
+                                        <span class="stock-btn">
+                                            <a href="javascript:;" class="cut">−</a>
+                                            <a href="javascript:;" class="add">+</a>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="pro-total" style="margin-left: 30px;width: 100px;">
+                                    ￥ 5799.00
+                                </li>
+                                <li style="margin-left: 30px;width: 100px;">
+                                    <a href="javascript:;" class="pro-del">删除</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <button class="btn">立即登录</button>
-                    <div class="product-time">
-                        <p><em>01</em>月06日 10:08开售：</p>
-                        <ul class="clearfix">
-                            <li>00</li>
-                            <em>天</em>
-                            <li>00</li>
-                            <em>:</em>
-                            <li>09</li>
-                            <em>:</em>
-                            <li>30</li>
-                        </ul>
+                    <div class="pro-list">
+                        <div class="pro-list-left">
+                            <span class="checkThis"></span>
+                        </div>
+                        <div class="pro-main">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <img src="https://res.vmallres.com/pimages//product/6901443415908/428_428_129AFEFAE8375F761A9E08DC132A53F306027824EA772535mp.png" alt="">
+                                </a>
+                            </div>
+                            <ul class="clearfix">
+                                <li style="width: 450px;">
+                                    <a href="#" class="pro-title">HUAWEI Mate 30E Pro 5G 全网通 8GB+256GB（翡冷翠）</a>
+                                    <p class="pro-info">翡冷翠 5G全网通 8GB+256GB 官方标配</p>
+                                    <div class="p-label">
+                                        <span>分期免息</span>
+                                    </div>
+                                </li>
+                                <li style="width: 140px;margin-left: 10px;margin-right: -20px;">
+                                    <div class="pro-price">
+                                        <span>￥ 5799.00</span>
+                                    </div>
+                                </li>
+                                <li style="width: 100px;margin-left: 30px;">
+                                    <div class="pro-stock">
+                                        <input type="number" id="num" value="1">
+                                        <span class="stock-btn">
+                                            <a href="javascript:;" class="cut">−</a>
+                                            <a href="javascript:;" class="add">+</a>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="pro-total" style="margin-left: 30px;width: 100px;">
+                                    ￥ 5799.00
+                                </li>
+                                <li style="margin-left: 30px;width: 100px;">
+                                    <a href="javascript:;" class="pro-del">删除</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="pro-list">
+                        <div class="pro-list-left">
+                            <span class="checkThis"></span>
+                        </div>
+                        <div class="pro-main">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <img src="https://res.vmallres.com/pimages//product/6901443415908/428_428_129AFEFAE8375F761A9E08DC132A53F306027824EA772535mp.png" alt="">
+                                </a>
+                            </div>
+                            <ul class="clearfix">
+                                <li style="width: 450px;">
+                                    <a href="#" class="pro-title">HUAWEI Mate 30E Pro 5G 全网通 8GB+256GB（翡冷翠）</a>
+                                    <p class="pro-info">翡冷翠 5G全网通 8GB+256GB 官方标配</p>
+                                    <div class="p-label">
+                                        <span>分期免息</span>
+                                    </div>
+                                </li>
+                                <li style="width: 140px;margin-left: 10px;margin-right: -20px;">
+                                    <div class="pro-price">
+                                        <span>￥ 5799.00</span>
+                                    </div>
+                                </li>
+                                <li style="width: 100px;margin-left: 30px;">
+                                    <div class="pro-stock">
+                                        <input type="number" id="num" value="1">
+                                        <span class="stock-btn">
+                                            <a href="javascript:;" class="cut">−</a>
+                                            <a href="javascript:;" class="add">+</a>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="pro-total" style="margin-left: 30px;width: 100px;">
+                                    ￥ 5799.00
+                                </li>
+                                <li style="margin-left: 30px;width: 100px;">
+                                    <a href="javascript:;" class="pro-del">删除</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
                 </div>
-                <div class="tips clearfix">
-                    <span>温馨提示</span>
-                    <p>提前设置<a href="#">默认收获地址</a>，购买更顺利~</p>
+                <div class="pro-bottom">
+                    <div class="left">
+                        <span class="checkAll checked"></span>全选
+                        <span class="del">删除</span>
+                    </div>
+                    <div class="btn">立即结算</div>
+                    <div class="allPrice">
+                        <p><em>总计：</em> <span class="total-price">¥&nbsp; 0.00</span><i></i></p>
+                        <div class="choose">
+                            已选择 <span class="number">0</span>件商品，优惠：<span class="preferential">¥&nbsp;0.00</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="product-tab">
-        <div class="container">
-            <p><a href="#" class="current">商品详情</a><a href="#">规格参数</a><a href="#">包装与售后</a><a href="#">用户评价（999+）</a></p>
-        </div>
-    </div>
+    
 
 
-   
+
 
     <div id="footer">
         <div class="f_inner container">
