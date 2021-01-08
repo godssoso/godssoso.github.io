@@ -92,7 +92,7 @@ $(function(){
     //侧边栏列表渲染
     // var arr = [0,1,2,3,4,5,6,7,8,9]
     $.ajax({
-        url:'./list.json',
+        url:'../json/list.json',
         dataType:'json',
         success:function (res) {
             // console.log(res[$(that).index()]);

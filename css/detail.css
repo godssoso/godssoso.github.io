@@ -228,7 +228,7 @@
     top: 2px;
     left: 5px;
     cursor: pointer;
-    background: url(../../images/icon50.png) no-repeat 0 -140px;
+    background: url(../images/icon50.png) no-repeat 0 -140px;
 }
 .description .right ul li{
     display: inline-block;
@@ -533,14 +533,17 @@
     position: fixed;
     width: 460px;
     height: 187px;
-    top: 250px;
-    left: 560px;
+    /* top: 250px;
+    left: 560px; */
+    left: calc(50% - 230px);
+    top: calc(50% - 90px);
     background: #fff;
     z-index: 101;
     border: 1px solid #cecece;
     display: none;
 }
 .model .m_title{
+    background: #f5f5f5;
     height: 30px;
     width: 100%;
     cursor: move;

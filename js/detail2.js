@@ -152,7 +152,7 @@ $(function(){
     var flag = true;
      $('.btn').click(function(){
          if(flag){
-            location.href = '../login.html';
+            location.href = './login.html';
          }else{
             $('.model').show()
             $('.bigMask').show();

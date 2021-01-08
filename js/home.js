@@ -126,40 +126,40 @@ $(function () {
     },2000)
 
 
-    function Play(banner) {
-        this.banner = banner;//总容器
-        this.ul = this.banner.children().eq(0);
-        this.lis = this.ul.children();
-        this.next = this.banner.children('i').eq(0);  //下一张箭头
-        this.prev = this.banner.children('i').eq(1); //上一张箭头
-        this.ol = this.banner.children('ol'); // 进度条
-        this.init();
-    }
-    Play.prototype.init = function () {
-        this.mouseover();
-        this.mouseleave();
-    }
-    //鼠标移入事件
-    Play.prototype.mouseover = function () {
-        var that = this;
-        this.banner.mouseover(function () {
-            // console.log(111);
-            // console.log(that.prev);
-            // console.log(that.next);
-            // that.prev[0].style.display = 'block';
-            // that.next[0].style.display = 'block';
-            that.next.show();
-            that.prev.show();
-            // console.log(that.prev[0]);
-        })
-    }
-    Play.prototype.mouseleave = function () {
-        var that = this;
-        this.banner.mouseleave(function () {
-            that.prev.hide();
-            that.next.hide();
-        })
-    }
+    // function Play(banner) {
+    //     this.banner = banner;//总容器
+    //     this.ul = this.banner.children().eq(0);
+    //     this.lis = this.ul.children();
+    //     this.next = this.banner.children('i').eq(0);  //下一张箭头
+    //     this.prev = this.banner.children('i').eq(1); //上一张箭头
+    //     this.ol = this.banner.children('ol'); // 进度条
+    //     this.init();
+    // }
+    // Play.prototype.init = function () {
+    //     this.mouseover();
+    //     this.mouseleave();
+    // }
+    // //鼠标移入事件
+    // Play.prototype.mouseover = function () {
+    //     var that = this;
+    //     this.banner.mouseover(function () {
+    //         // console.log(111);
+    //         // console.log(that.prev);
+    //         // console.log(that.next);
+    //         // that.prev[0].style.display = 'block';
+    //         // that.next[0].style.display = 'block';
+    //         that.next.show();
+    //         that.prev.show();
+    //         // console.log(that.prev[0]);
+    //     })
+    // }
+    // Play.prototype.mouseleave = function () {
+    //     var that = this;
+    //     this.banner.mouseleave(function () {
+    //         that.prev.hide();
+    //         that.next.hide();
+    //     })
+    // }
     // var play = new Play($('.banner'));
 
 

@@ -79,7 +79,9 @@ $(function(){
                success:function(res){
                     if(res.Code == 1){
                         document.cookie = 'username='+$('#uname').val();
-                        location.href = './mall/mall.html';
+                        // console.log(111);
+                        // location.href = 'http://localhost/pages/mall.html';
+                        location.href = './mall.html';
                     }else if(res.Code == 0){
                         alert('登陆失败，帐号或密码错误，请重新登录');
                         $('#uname').val('');

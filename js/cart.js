@@ -219,6 +219,9 @@ $(function(){
          if(!$(this).val()){
             $(this).val(1);
          }
+         if($(this).val() < 1){
+            $(this).val(1);
+         }
         var num = parseInt($(this).val());
          //获取单价，去掉￥符号
          var p = $(this).parents('li').prev().find('span').html().substring(1);
@@ -249,6 +252,13 @@ $(function(){
     //2.点击底部删除按钮时，所有商品清空
     $('.pro-warp').on('click','.pro-del',function(){   //点击操作栏下的删除时，当前商品消失
         $(this).parents('.pro-list').remove();
+        if($('.pro-warp').find('.checked').length == $('.pro-warp').find('.checkThis').length){
+            $('.checkAll').addClass('checked');
+            checked = true;
+        }else{
+            $('.checkAll').removeClass('checked');
+            checked = false;
+        }
         getSum();  //更新总量和总价
         $.ajax({
             url:'http://39.108.139.186:9999/cart/delete',

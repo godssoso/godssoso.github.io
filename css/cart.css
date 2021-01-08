@@ -105,7 +105,7 @@
     margin-top: 2px;
     width: 320px;
     height: 50px;
-    background: rgba(0,0,0,0) url(../../images/sprites6.806df78.svg) no-repeat;
+    background: rgba(0,0,0,0) url(../images/sprites6.806df78.svg) no-repeat;
     background-position: -42px -22px;
 }
 
@@ -171,7 +171,7 @@
 .pro-top-left span{
     margin-right: 10px;
     cursor: pointer;
-    background: url(../../images/icon-header.c4189e7.png) no-repeat;
+    background: url(../images/icon-header.c4189e7.png) no-repeat;
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -202,7 +202,7 @@
 .pro-list .pro-list-left>span{
     margin-right: 10px;
     cursor: pointer;
-    background: url(../../images/icon-header.c4189e7.png) no-repeat;
+    background: url(../images/icon-header.c4189e7.png) no-repeat;
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -354,7 +354,7 @@ input::-webkit-inner-spin-button {
 .pro-bottom .left .checkAll{
     margin-right: 10px;
     cursor: pointer;
-    background: url(../../images/icon-header.c4189e7.png) no-repeat;
+    background: url(../images/icon-header.c4189e7.png) no-repeat;
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -406,7 +406,7 @@ input::-webkit-inner-spin-button {
     position: absolute;
     right: -18px;
     top: 7px;
-    background: url(../../images/icon-order.6c7ea20.png) no-repeat;
+    background: url(../images/icon-order.6c7ea20.png) no-repeat;
     cursor: pointer;
     background-position: -22px -137px;
 }

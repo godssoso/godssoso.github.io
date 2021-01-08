@@ -313,12 +313,15 @@
     color: #111;
     line-height: 42px;
     text-align: center;
-    bottom: 163px;
-    left: 372px;
+    /* bottom: 163px; */
+    bottom: 25.47%;
+    /* left: 372px; */
+    left: 24.07%;
     transition: all 0.3s;
 }
 .banner ul li .a1{
-    left: 500px;
+    /* left: 500px; */
+    left: 26.04%;
 }
 .banner ul li .a2{
     left: calc(50% - 85px);
