@@ -89,7 +89,7 @@
 #banner ol{
     position: absolute;
     left: calc(50% + 505px);
-    bottom: 50px;
+    bottom: 90px;
 }
 #banner ol li{
     width: 12px;
